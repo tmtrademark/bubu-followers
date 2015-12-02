@@ -34,7 +34,7 @@ Followers.prototype._scheduleFollowers = function() {
       if (body.follows.length > 0) {
         this.nodecg.log.debug('Discovered ' + body.follows.length + ' followers.');
         this.latestFollower.value = body.follows[0];
-
+        this.nodecg.log.debug(body.follows[0].user.display_name);
         body.follows.reverse().map((follower) => {
           var parsedTs = Date.parse(follower.created_at);
           if (parsedTs > lastFollowerTs) {

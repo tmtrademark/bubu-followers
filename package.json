@@ -14,5 +14,11 @@
   },
   "devDependencies": {
     "eslint": "^1.6.0"
+  },
+  "nodecg": {
+    "compatibleRange": "~0.7.0",
+    "bundleDependencies" : {
+       "lfg-twitchapi" : ""
+    }
   }
 }
